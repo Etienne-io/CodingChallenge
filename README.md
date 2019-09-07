@@ -77,7 +77,9 @@ I changed this behaviour and the search is only perform when the user click on t
 
 The idea behind this was simply to avoid displaying inappriate content during the search typing.
 
+### Assets
 
+Images should have been in vectorial format or using the right size (x1, x2...) for the place holder.
 
 ## Conclusion
 
