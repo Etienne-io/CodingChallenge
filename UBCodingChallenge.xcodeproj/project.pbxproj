@@ -13,7 +13,6 @@
 		8F2D5599232278970089D2D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D5598232278970089D2D5 /* Assets.xcassets */; };
 		8F2D559C232278970089D2D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F2D559A232278970089D2D5 /* LaunchScreen.storyboard */; };
 		8F2D55A7232278980089D2D5 /* UBCodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D55A6232278980089D2D5 /* UBCodingChallengeTests.swift */; };
-		8F2D55B2232278980089D2D5 /* UBCodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D55B1232278980089D2D5 /* UBCodingChallengeUITests.swift */; };
 		8F2D55C32322915C0089D2D5 /* FlickrApiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D55C22322915C0089D2D5 /* FlickrApiModels.swift */; };
 		8F2D55C5232293680089D2D5 /* FlickrApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D55C4232293680089D2D5 /* FlickrApiService.swift */; };
 		8F2D55C7232293CA0089D2D5 /* FlickrApiServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F2D55C6232293CA0089D2D5 /* FlickrApiServiceError.swift */; };
@@ -36,13 +35,6 @@
 			remoteGlobalIDString = 8F2D558D232278940089D2D5;
 			remoteInfo = UBCodingChallenge;
 		};
-		8F2D55AE232278980089D2D5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8F2D5586232278940089D2D5 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8F2D558D232278940089D2D5;
-			remoteInfo = UBCodingChallenge;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -56,9 +48,6 @@
 		8F2D55A2232278970089D2D5 /* UBCodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBCodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F2D55A6232278980089D2D5 /* UBCodingChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCodingChallengeTests.swift; sourceTree = "<group>"; };
 		8F2D55A8232278980089D2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8F2D55AD232278980089D2D5 /* UBCodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UBCodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F2D55B1232278980089D2D5 /* UBCodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UBCodingChallengeUITests.swift; sourceTree = "<group>"; };
-		8F2D55B3232278980089D2D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8F2D55C22322915C0089D2D5 /* FlickrApiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrApiModels.swift; sourceTree = "<group>"; };
 		8F2D55C4232293680089D2D5 /* FlickrApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrApiService.swift; sourceTree = "<group>"; };
 		8F2D55C6232293CA0089D2D5 /* FlickrApiServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrApiServiceError.swift; sourceTree = "<group>"; };
@@ -88,13 +77,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F2D55AA232278980089D2D5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -103,7 +85,6 @@
 			children = (
 				8F2D5590232278940089D2D5 /* UBCodingChallenge */,
 				8F2D55A5232278970089D2D5 /* UBCodingChallengeTests */,
-				8F2D55B0232278980089D2D5 /* UBCodingChallengeUITests */,
 				8F2D558F232278940089D2D5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -113,7 +94,6 @@
 			children = (
 				8F2D558E232278940089D2D5 /* UBCodingChallenge.app */,
 				8F2D55A2232278970089D2D5 /* UBCodingChallengeTests.xctest */,
-				8F2D55AD232278980089D2D5 /* UBCodingChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,15 +121,6 @@
 			path = UBCodingChallengeTests;
 			sourceTree = "<group>";
 		};
-		8F2D55B0232278980089D2D5 /* UBCodingChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-				8F2D55B1232278980089D2D5 /* UBCodingChallengeUITests.swift */,
-				8F2D55B3232278980089D2D5 /* Info.plist */,
-			);
-			path = UBCodingChallengeUITests;
-			sourceTree = "<group>";
-		};
 		8F2D55C12322913E0089D2D5 /* ApiService */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,8 +141,8 @@
 				8F2D5593232278940089D2D5 /* SearchPhotosViewController.swift */,
 				8F2D55D02322A4B30089D2D5 /* SearchPhotosProtocols.swift */,
 				8F2D55D42322C04B0089D2D5 /* SearchPhotosInteractor.swift */,
-				8F2D55D62323A8540089D2D5 /* UIView+Extensions.swift */,
 				8F2D55DF2323CC8F0089D2D5 /* SearchPhotosRouter.swift */,
+				8F2D55D62323A8540089D2D5 /* UIView+Extensions.swift */,
 			);
 			path = SearchPhotos;
 			sourceTree = "<group>";
@@ -223,24 +194,6 @@
 			productReference = 8F2D55A2232278970089D2D5 /* UBCodingChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8F2D55AC232278980089D2D5 /* UBCodingChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8F2D55BC232278980089D2D5 /* Build configuration list for PBXNativeTarget "UBCodingChallengeUITests" */;
-			buildPhases = (
-				8F2D55A9232278980089D2D5 /* Sources */,
-				8F2D55AA232278980089D2D5 /* Frameworks */,
-				8F2D55AB232278980089D2D5 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8F2D55AF232278980089D2D5 /* PBXTargetDependency */,
-			);
-			name = UBCodingChallengeUITests;
-			productName = UBCodingChallengeUITests;
-			productReference = 8F2D55AD232278980089D2D5 /* UBCodingChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,10 +208,6 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					8F2D55A1232278970089D2D5 = {
-						CreatedOnToolsVersion = 10.3;
-						TestTargetID = 8F2D558D232278940089D2D5;
-					};
-					8F2D55AC232278980089D2D5 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = 8F2D558D232278940089D2D5;
 					};
@@ -279,7 +228,6 @@
 			targets = (
 				8F2D558D232278940089D2D5 /* UBCodingChallenge */,
 				8F2D55A1232278970089D2D5 /* UBCodingChallengeTests */,
-				8F2D55AC232278980089D2D5 /* UBCodingChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,13 +245,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8F2D55A0232278970089D2D5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8F2D55AB232278980089D2D5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -341,14 +282,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8F2D55A9232278980089D2D5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8F2D55B2232278980089D2D5 /* UBCodingChallengeUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -356,11 +289,6 @@
 			isa = PBXTargetDependency;
 			target = 8F2D558D232278940089D2D5 /* UBCodingChallenge */;
 			targetProxy = 8F2D55A3232278970089D2D5 /* PBXContainerItemProxy */;
-		};
-		8F2D55AF232278980089D2D5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8F2D558D232278940089D2D5 /* UBCodingChallenge */;
-			targetProxy = 8F2D55AE232278980089D2D5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -580,46 +508,6 @@
 			};
 			name = Release;
 		};
-		8F2D55BD232278980089D2D5 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GLQ6TYAHHJ;
-				INFOPLIST_FILE = UBCodingChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.emerckx.UBCodingChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UBCodingChallenge;
-			};
-			name = Debug;
-		};
-		8F2D55BE232278980089D2D5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = GLQ6TYAHHJ;
-				INFOPLIST_FILE = UBCodingChallengeUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = io.emerckx.UBCodingChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = UBCodingChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -646,15 +534,6 @@
 			buildConfigurations = (
 				8F2D55BA232278980089D2D5 /* Debug */,
 				8F2D55BB232278980089D2D5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8F2D55BC232278980089D2D5 /* Build configuration list for PBXNativeTarget "UBCodingChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8F2D55BD232278980089D2D5 /* Debug */,
-				8F2D55BE232278980089D2D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
