@@ -13,9 +13,9 @@ import UIKit
  It displays a placeholder until a image is available
  */
 class PhotoCollectionViewCell: UICollectionViewCell {
-
-    @IBOutlet weak var imageView: UIImageView!
     var flickrPhoto: FlickrPhoto?
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,5 +34,4 @@ class PhotoCollectionViewCell: UICollectionViewCell {
         imageView.image = UIImage(named: "placeholder")
         imageView.load(url: url)
     }
-    
 }

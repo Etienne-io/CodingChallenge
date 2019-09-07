@@ -13,7 +13,6 @@ import Foundation
  */
 class FlickrApiService {
     private let urlSession = URLSession.shared
-    
     private let jsonDecoder = JSONDecoder()
     
     private func fetchResources<T: Decodable>(url: URL, completion: @escaping (Result<T, FlickrApiServiceError>) -> Void) {

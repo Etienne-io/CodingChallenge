@@ -15,7 +15,6 @@ import UIKit
  In a bigger application, this kind of solution should be discussed and probably avoid.
  */
 extension UIImageView {
-    
     static var cache: NSCache<NSString, UIImage> = NSCache()
     
     func load(url: URL) {
