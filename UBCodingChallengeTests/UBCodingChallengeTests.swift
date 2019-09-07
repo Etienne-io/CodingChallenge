@@ -39,7 +39,7 @@ class FlickApiServiceWithErrorSpy: FlickrApiServiceProtocol {
     }
 }
 
-class SearchPhotosViewControllerSpy: SearchViewProtocol {
+class SearchPhotosViewControllerSpy: SearchPhotosViewProtocol {
     var presenter: SearchPhotosPresenterProtocol?
     private(set) var showEmptySearchHasBeenCalled = false
     private(set) var showPhotosHasBeenCalled = false

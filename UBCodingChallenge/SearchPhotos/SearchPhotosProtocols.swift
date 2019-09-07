@@ -1,5 +1,5 @@
 //
-//  SearchProtocols.swift
+//  SearchPhotosProtocols.swift
 //  UBCodingChallenge
 //
 //  Created by Etienne Mercier on 06/09/2019.
@@ -12,7 +12,7 @@ import UIKit
 /**
  SearchViewProtocol defines the methods that can be called by the presenter on the view
  */
-protocol SearchViewProtocol: class {
+protocol SearchPhotosViewProtocol: class {
     var presenter: SearchPhotosPresenterProtocol? { get set }
     
     func showEmptySearch()
@@ -27,7 +27,7 @@ protocol SearchViewProtocol: class {
  SearchPhotosPresenterProtocol defines the methods that can be called by the view on the presenter
  */
 protocol SearchPhotosPresenterProtocol: class {
-    var view: SearchViewProtocol? { get set }
+    var view: SearchPhotosViewProtocol? { get set }
     var interactor: SearchPhotosInteractorInputProtocol? { get set }
     
     func viewDidLoad()

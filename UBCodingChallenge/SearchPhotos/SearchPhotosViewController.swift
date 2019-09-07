@@ -64,7 +64,7 @@ class SearchPhotosViewController: UIViewController {
     }
 }
 
-extension SearchPhotosViewController: SearchViewProtocol {
+extension SearchPhotosViewController: SearchPhotosViewProtocol {
     func showEmptySearch() {
         DispatchQueue.main.async {
             self.photosCollectionView.isHidden = true

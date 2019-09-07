@@ -68,6 +68,10 @@ On new data, the collectionView#reload method is called. It cause "blinking" due
 
 Sometime, I believe that an Api call should be returned on the main thread, sometime I don't. For this project, the view is responsible to take care of running the UI methods on the UIThread
 
+### Storyboard
+
+UIViewController is instantiate from the Main storyboard. In the VIPER architecture, it would be better to have a specific xib file for it or even better, create everything programmatically. But again, this is a small project and storyboard is a quick way to build an interface
+
 ## Note
 
 ### TextDiDChange vs SearchClick

@@ -1,5 +1,5 @@
 //
-//  SearchPresenter.swift
+//  SearchPhotosPresenter.swift
 //  UBCodingChallenge
 //
 //  Created by Etienne Mercier on 06/09/2019.
@@ -15,7 +15,7 @@ import Foundation
  */
 class SearchPhotosPresenter: SearchPhotosPresenterProtocol {
     var interactor: SearchPhotosInteractorInputProtocol?
-    weak var view: SearchViewProtocol?
+    weak var view: SearchPhotosViewProtocol?
     
     private var page = 1
     private var totalPage = Int.max

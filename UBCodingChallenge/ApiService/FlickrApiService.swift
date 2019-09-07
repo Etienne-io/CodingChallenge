@@ -14,10 +14,7 @@ import Foundation
 class FlickrApiService {
     private let urlSession = URLSession.shared
     
-    private let jsonDecoder: JSONDecoder = {
-        let jsonDecoder = JSONDecoder()
-        return jsonDecoder
-    }()
+    private let jsonDecoder = JSONDecoder()
     
     private func fetchResources<T: Decodable>(url: URL, completion: @escaping (Result<T, FlickrApiServiceError>) -> Void) {
         guard let urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: true) else {

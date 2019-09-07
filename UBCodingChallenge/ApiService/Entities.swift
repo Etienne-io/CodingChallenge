@@ -1,5 +1,5 @@
 //
-//  Models.swift
+//  Entities.swift
 //  UBCodingChallenge
 //
 //  Created by Etienne Mercier on 06/09/2019.
