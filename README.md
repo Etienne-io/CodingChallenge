@@ -1,4 +1,4 @@
-#UBCodingChallenge
+# UBCodingChallenge
 
 This is the result project of the Coding challengee.
 
@@ -25,7 +25,7 @@ The FlickrApiService use the iOS URLSession with an added extension to easily wo
 
 ### Presenter
 
-The presenter discusses with the view and the interactor to display data and maintain the state of the app (last query and last page requested). The view only have to ask to the presenter a new search or more photos for the current search. The presenter will send the right parameter to the interactor to perform the request.
+The presenter discusses with the view and the interactor to display data and maintains the state of the app (last query and last page requested). The view only have to ask to the presenter a new search or more photos for the current search. The presenter will send the right parameter to the interactor to perform the request.
 
 ### View
 
@@ -38,7 +38,7 @@ It can display :
 
 ### Router
 
-The router is only use to instantiate the VIPER module
+The router is only use to instantiate the VIPER module. If more module are added, the router will be responsible of the navigation.
 
 ## Tests
 
@@ -66,7 +66,7 @@ On new data, the collectionView#reload method is called. It cause "blinking" due
 
 ### Ensuring running on UIThread
 
-Sometime, I believe that an Api call should be returned on the main thread, sometime I don't. For this project, the view is responsible to take care of running the methods on the UIThread
+Sometime, I believe that an Api call should be returned on the main thread, sometime I don't. For this project, the view is responsible to take care of running the UI methods on the UIThread
 
 ## Note
 
@@ -81,5 +81,5 @@ The idea behind this was simply to avoid displaying inappriate content during th
 
 ## Conclusion
 
-I took around five hours to make the application and about an hour to build the test.
+I took around five hours to make the application (maybe a bit more with cleaning) and about an hour to build the test.
 We can find improvments to this application code but I won't be ashame to share it with people which is a good point :)
