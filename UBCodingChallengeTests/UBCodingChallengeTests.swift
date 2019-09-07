@@ -75,12 +75,9 @@ class SearchPhotosViewControllerSpy: SearchPhotosViewProtocol {
     func hideNetworkLoading() {
         hideNetworkLoadingHasBeenCalled = true
     }
-    
-    
 }
 
 class UBCodingChallengeTests: XCTestCase {
-    
     var apiService: FlickrApiServiceProtocol!
     var viewController: SearchPhotosViewControllerSpy!
     var presenter: (SearchPhotosPresenterProtocol & SearchPhotosInteractorOutputProtocol)!
@@ -186,5 +183,4 @@ class UBCodingChallengeTests: XCTestCase {
     private func thenTheErrorIsDisplayed() {
         XCTAssertTrue(viewController.showErrorHasBeenCalled)
     }
-    
 }
