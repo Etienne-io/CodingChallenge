@@ -66,36 +66,48 @@ class SearchPhotosViewController: UIViewController {
 
 extension SearchPhotosViewController: SearchViewProtocol {
     func showEmptySearch() {
-        photosCollectionView.isHidden = true
-        informationsLabel.isHidden = false
-        informationsLabel.text = "Search something!"
+        DispatchQueue.main.async {
+            self.photosCollectionView.isHidden = true
+            self.informationsLabel.isHidden = false
+            self.informationsLabel.text = "Search something!"
+        }
     }
     
     func showPhotos(photos: [FlickrPhoto], totalPhotos: Int) {
-        informationsLabel.isHidden = true
-        photosCollectionView.isHidden = false
-        self.totalPhotos = totalPhotos
-        flickrPhotos.append(contentsOf: photos)
+        DispatchQueue.main.async {
+            self.informationsLabel.isHidden = true
+            self.photosCollectionView.isHidden = false
+            self.totalPhotos = totalPhotos
+            self.flickrPhotos.append(contentsOf: photos)
+        }
     }
     
     func showEmptyResult() {
-        photosCollectionView.isHidden = true
-        informationsLabel.isHidden = false
-        informationsLabel.text = "Nothing to see here, try again!"
+        DispatchQueue.main.async {
+            self.photosCollectionView.isHidden = true
+            self.informationsLabel.isHidden = false
+            self.informationsLabel.text = "Nothing to see here, try again!"
+        }
     }
     
     func showError(error: Error) {
-        photosCollectionView.isHidden = true
-        informationsLabel.isHidden = false
-        informationsLabel.text = "\(error)"
+        DispatchQueue.main.async {
+            self.photosCollectionView.isHidden = true
+            self.informationsLabel.isHidden = false
+            self.informationsLabel.text = "\(error)"
+        }
     }
     
     func showNetworkLoading() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = true
+        }
     }
     
     func hideNetworkLoading() {
-        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        DispatchQueue.main.async {
+            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+        }
     }
 }
 

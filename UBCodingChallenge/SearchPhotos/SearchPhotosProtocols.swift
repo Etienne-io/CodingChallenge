@@ -59,5 +59,5 @@ protocol SearchPhotosInteractorOutputProtocol: class {
  As we only got on screen for the moment, it will be use only to create the view controller and instantiate all required object
  */
 protocol SearchPhotosRouterProtocol: class {
-    static func createSearchPhotosModule(apiService: FlickrApiService) -> UIViewController
+    static func createSearchPhotosModule(apiService: FlickrApiServiceProtocol) -> UIViewController
 }

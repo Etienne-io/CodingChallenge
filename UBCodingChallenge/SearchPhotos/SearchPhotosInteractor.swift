@@ -14,9 +14,9 @@ import Foundation
  */
 class SearchPhotosInteractor: SearchPhotosInteractorInputProtocol {
     weak var presenter: SearchPhotosInteractorOutputProtocol?
-    let apiService: FlickrApiService
+    let apiService: FlickrApiServiceProtocol
     
-    init(apiService: FlickrApiService) {
+    init(apiService: FlickrApiServiceProtocol) {
         self.apiService = apiService
     }
     

@@ -46,41 +46,29 @@ class SearchPhotosPresenter: SearchPhotosPresenterProtocol {
         page += 1
         interactor?.retrievePhotos(query: lastQuery, page: page)
     }
-    
 }
 
 extension SearchPhotosPresenter: SearchPhotosInteractorOutputProtocol {
     func didStartNetworkRequest() {
-        DispatchQueue.main.async {
-            self.view?.showNetworkLoading()
-        }
+        self.view?.showNetworkLoading()
     }
     
     func didStopNetworkRequest() {
-        DispatchQueue.main.async {
-            self.view?.hideNetworkLoading()
-        }
+        self.view?.hideNetworkLoading()
     }
     
     func didRetrievePhotos(_ photos: FlickrPhotosResponse) {
         fetchInProgress = false
         if (photos.pages == 0) {
-            DispatchQueue.main.async {
-                self.view?.showEmptyResult()
-            }
+            self.view?.showEmptyResult()
         }
         else {
             page = photos.page
-            DispatchQueue.main.async {
-                print("show photo \(self.lastQuery)")
-                self.view?.showPhotos(photos: photos.photos, totalPhotos: photos.pages)
-            }
+            self.view?.showPhotos(photos: photos.photos, totalPhotos: photos.pages)
         }
     }
     
     func didFailed(error: Error) {
-        DispatchQueue.main.async {
-            self.view?.showError(error: error)
-        }
+        self.view?.showError(error: error)
     }
 }

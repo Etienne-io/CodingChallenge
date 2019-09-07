@@ -14,7 +14,7 @@ class SearchPhotosRouter: SearchPhotosRouterProtocol {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
-    static func createSearchPhotosModule(apiService: FlickrApiService) -> UIViewController {
+    static func createSearchPhotosModule(apiService: FlickrApiServiceProtocol) -> UIViewController {
         let searchPhotosViewController = storyboard.instantiateViewController(withIdentifier: "searchPhotoViewController") as! SearchPhotosViewController
         let presenter: SearchPhotosPresenterProtocol & SearchPhotosInteractorOutputProtocol = SearchPhotosPresenter()
         let interactor: SearchPhotosInteractorInputProtocol = SearchPhotosInteractor(apiService: apiService)
